@@ -27,26 +27,20 @@ Launch mail app from react-native application
      compile project(':react-native-mail-launcher')
    ```
 
-#### Windows
+#### iOS
 
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNMailLauncher.sln` in `node_modules/react-native-mail-launcher/windows/RNMailLauncher.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-
-- Add `using Mail.Launcher.RNMailLauncher;` to the usings at the top of the file
-- Add `new RNMailLauncherPackage()` to the `List<IReactPackage>` returned by the `Packages` method
+We do not need a native module for iOS
 
 ## Usage
 
 ```javascript
 import * as React from "react";
 import { View, Button } from "react-native";
-import launchMail from "react-native-mail-launcher";
+import launchMailApp from "react-native-mail-launcher";
 
 export default class Example extends React.Component {
   openMail = () => {
-    launchMail();
+    launchMailApp();
   };
 
   render() {
