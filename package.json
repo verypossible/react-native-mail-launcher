@@ -1,6 +1,6 @@
 {
   "name": "react-native-mail-launcher",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Launch mail app from react-native application",
   "main": "index.js",
   "types": "index.d.ts",
